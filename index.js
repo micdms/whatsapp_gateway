@@ -1,8 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 3000;
+const port = 5000;
 const msg = require('./src/msg');
-const client = require('./src/whatsapp');
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {

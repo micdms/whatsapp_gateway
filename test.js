@@ -1,5 +1,4 @@
-var QRCode = require('qrcode')
+const bot = require('./src/telegram'); // Pastikan Anda menyebutkan lokasi file bot yang tepat
 
-QRCode.toDataURL('I am a pony!', function (err, url) {
-    console.log(url)
-})
+// Kemudian Anda dapat mengirim pesan dengan menggunakan bot yang diimpor
+bot.sendMessage(1270328028, 'Halo dari luar!');
